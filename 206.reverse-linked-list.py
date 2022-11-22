@@ -12,7 +12,7 @@
 #         self.next = next
 
 def reversell(head):
-    if  head.next is None:
+    if head.next is None:
         return head
 
     new_head=reversell(head.next)
@@ -21,7 +21,6 @@ def reversell(head):
     head.next=None
 
     return new_head
-
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         if head is None:
