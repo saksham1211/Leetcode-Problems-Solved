@@ -21,10 +21,11 @@ class Solution:
 
             if ans not in dic:
                 dic[ans]=i
-
+        print(dic)
         for i in range(len(nums)):
             if ((target-nums[i]) in dic):
                 return [i, dic[target-nums[i]]]
+
 
 
         
